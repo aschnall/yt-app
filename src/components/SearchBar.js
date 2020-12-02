@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const SearchBar = ({ onFormSubmit }) => {
 	const [term, setTerm] = useState('');
 
+	//calling function passed as props from the App component with the inputted term to fetch video data
 	const onSubmit = event => {
 		event.preventDefault();
 		onFormSubmit(term);

@@ -1,5 +1,6 @@
 import React from 'react';
 
+//component responsible for displaying the selected video and description on the screen
 const VideoDetail = ({ video }) => {
 
 	if (!video) {

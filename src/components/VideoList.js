@@ -3,6 +3,7 @@ import VideoItem from './VideoItem';
 
 const VideoList = ({ videos, onVideoSelect }) => {
 
+	//mapping through videos array to create our list of sidebar videos
 	const renderedList = videos.map((video) => {
 		return <VideoItem 
 					 		key={video.id.videoId} 

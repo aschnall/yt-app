@@ -6,9 +6,11 @@ import useVideos from '../hooks/useVideos';
 
 
 const App = () => {
+
 	const [selectedVideo, setSelectedVideo] = useState(null);
 	const [videos, search] = useVideos('buildings');
 
+	//set the selectedVideo piece of state to the first video whenever new video data is fetched
 	useEffect(() => {
 		setSelectedVideo(videos[0]);
 	}, [videos])
